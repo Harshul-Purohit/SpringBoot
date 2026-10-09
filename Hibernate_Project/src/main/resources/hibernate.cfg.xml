@@ -18,7 +18,12 @@
 <!--        <mapping class="org.example.Student"/>-->
 
         <!-- Mapping for One-to-One package -->
-        <mapping class="org.example.onetoone.Student"/>
-        <mapping class="org.example.onetoone.Laptop"/>
+<!--        <mapping class="org.example.onetoone.Student"/>-->
+<!--        <mapping class="org.example.onetoone.Laptop"/>-->
+
+        <!-- Mapping for One-to-Many package -->
+        <mapping class="org.example.onetomany.Student"/>
+        <mapping class="org.example.onetomany.Book"/>
+
     </session-factory>
 </hibernate-configuration>
