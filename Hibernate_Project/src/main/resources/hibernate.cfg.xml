@@ -1,0 +1,24 @@
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/demo</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">@Harshul135</property>
+
+        <!-- Dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <!-- Auto schema update -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Show SQL -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Mapping -->
+<!--        <mapping class="org.example.Student"/>-->
+
+        <!-- Mapping for One-to-One package -->
+        <mapping class="org.example.onetoone.Student"/>
+        <mapping class="org.example.onetoone.Laptop"/>
+    </session-factory>
+</hibernate-configuration>
